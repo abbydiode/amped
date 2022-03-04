@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Assign new issue to project
     steps:
-    - name: Assign to proej
+    - name: Assign to project
       uses: srggrs/assign-one-project-github-action@1.2.1
       if: github.event.action == 'opened'
       with:
