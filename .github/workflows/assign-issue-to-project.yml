@@ -9,9 +9,9 @@ env:
 jobs:
   assign_one_project:
     runs-on: ubuntu-latest
-    name: Assign to project
+    name: Assign new issue to project
     steps:
-    - name: Assign new issues to project
+    - name: Assign to proej
       uses: srggrs/assign-one-project-github-action@1.2.1
       if: github.event.action == 'opened'
       with:
