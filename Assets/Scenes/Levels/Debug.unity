@@ -1715,9 +1715,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6068476516223467143, guid: 84da26d26af08334a942a96a75150f11, type: 3}
-      propertyPath: m_Name
-      value: Robot
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84da26d26af08334a942a96a75150f11, type: 3}
