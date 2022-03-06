@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1529807595}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FeetPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 6068476515370603404}
   - component: {fileID: 6068476515370603405}
   - component: {fileID: 6068476515370603406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -125,9 +125,9 @@ GameObject:
   - component: {fileID: 6068476515390401639}
   - component: {fileID: 6068476515390401640}
   - component: {fileID: 6068476515390401637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WalkSpeed: 5
-  JumpForce: 100
+  JumpForce: 150
   FeetPosition: {fileID: 1529807595}
   AirControlMultiplier: 0.5
 --- !u!50 &6068476515390401640
@@ -208,7 +208,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.55}
+  m_Size: {x: 0.85, y: 1.55}
   m_EdgeRadius: 0
 --- !u!1 &6068476516223467143
 GameObject:
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6068476516223467142}
   - component: {fileID: 6068476516223467141}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

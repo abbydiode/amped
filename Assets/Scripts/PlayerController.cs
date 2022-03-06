@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public float WalkSpeed = 5;
-    public float JumpForce = 100;
+    public float JumpForce = 150;
     public Transform FeetPosition;
     [Range(0, 1)] public float AirControlMultiplier = 0.5f;
     private Rigidbody2D _rigidbody;
@@ -18,10 +18,10 @@ public class PlayerController : MonoBehaviour {
         transform.position += new Vector3(Input.GetAxisRaw("Horizontal") * WalkSpeed, 0, 0) * Time.fixedDeltaTime;
         _spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") < 0;
 
-        if (Input.GetButton("Jump")) {
-            _rigidbody.AddForce((Vector2.up * JumpForce) * Time.fixedDeltaTime);
+        if (Input.GetButton("Jump") && isGrounded) {
+            _rigidbody.AddForce(Vector2.up * JumpForce);
         }
 
-        Debug.Log(Physics2D.Raycast(FeetPosition.position, Vector2.down, 0.1f, LayerMask.GetMask()).collider.name);
+        isGrounded = Physics2D.Raycast(FeetPosition.position, Vector2.down, 0.1f, ~LayerMask.GetMask("Player")).collider != null;
     }
 }
