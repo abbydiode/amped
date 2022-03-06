@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: 1619632526482261327
     second: grass_tiles_1
+  - first:
+      213: -6701596439569825802
+    second: GrassTiles_0
+  - first:
+      213: 4999597204712203498
+    second: GrassTiles_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_tiles_0
+      name: GrassTiles_0
       rect:
         serializedVersion: 2
         x: 0
@@ -108,21 +114,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28fb9ee6685f550e0800000000000000
-      internalID: -2281647678458052734
+      spriteID: 6fffa677b852ff2a0800000000000000
+      internalID: -6701596439569825802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tiles_1
+      name: GrassTiles_1
       rect:
         serializedVersion: 2
         x: 0
@@ -136,8 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f45c4af93371a7610800000000000000
-      internalID: 1619632526482261327
+      spriteID: ae428ee2b23226540800000000000000
+      internalID: 4999597204712203498
       vertices: []
       indices: 
       edges: []
