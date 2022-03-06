@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        transform.position += new Vector3(Input.GetAxisRaw("Horizontal") * WalkSpeed, 0, 0) * Time.fixedDeltaTime;
+        transform.position += new Vector3(Input.GetAxisRaw("Horizontal") * WalkSpeed, 0, 0) * (isGrounded ? 1 : AirControlMultiplier) * Time.fixedDeltaTime;
         _spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") < 0;
 
         if (Input.GetButton("Jump") && isGrounded) {
