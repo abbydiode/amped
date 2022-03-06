@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour {
     public float WalkSpeed = 5;
     public float JumpForce = 150;
     public Transform FeetPosition;
-    [Range(0, 1)] public float AirControlMultiplier = 0.5f;
+    [Range(0, 1)] public float AirControlMultiplier = 0.75f;
     private Rigidbody2D _rigidbody;
     private SpriteRenderer _spriteRenderer;
     private bool isGrounded = false;
