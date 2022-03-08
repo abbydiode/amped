@@ -11,6 +11,6 @@ public class EnemyController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        _rigidbody.AddForce(player.position - transform.position * RollSpeed);
+        _rigidbody.AddForce((player.position - transform.position).normalized * RollSpeed);
     }
 }
