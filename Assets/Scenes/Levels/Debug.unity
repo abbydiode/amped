@@ -220,6 +220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VerticalOffset: 2
+  SmoothingTime: 0.1
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!1 &782195145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,14 +1766,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 538871486, guid: 9fd04d5491d4b284bafdf1c3f68e8ef5, type: 3}
-      propertyPath: RollSpeed
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2777175936335242008, guid: 9fd04d5491d4b284bafdf1c3f68e8ef5, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2777175936335242009, guid: 9fd04d5491d4b284bafdf1c3f68e8ef5, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1871,6 +1865,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6068476515390401638, guid: 84da26d26af08334a942a96a75150f11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068476515390401639, guid: 84da26d26af08334a942a96a75150f11, type: 3}
+      propertyPath: JumpForce
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068476515390401640, guid: 84da26d26af08334a942a96a75150f11, type: 3}
+      propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6068476515390401641, guid: 84da26d26af08334a942a96a75150f11, type: 3}

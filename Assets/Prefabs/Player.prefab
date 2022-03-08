@@ -78,9 +78,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WalkSpeed: 5
-  JumpForce: 150
+  JumpForce: 8
   FeetPosition: {fileID: 1529807595}
   AirControlMultiplier: 0.75
+  velocity: {x: 0, y: 0}
 --- !u!50 &6068476515390401640
 Rigidbody2D:
   serializedVersion: 4
