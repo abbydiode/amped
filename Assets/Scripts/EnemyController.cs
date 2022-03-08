@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class EnemyController : MonoBehaviour {
+    public float RollSpeed = 2.5f;
+    private Transform player;
+    private Rigidbody2D _rigidbody;
+
+    void Start() {
+        _rigidbody = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void FixedUpdate() {
+        _rigidbody.AddForce(player.position - transform.position * RollSpeed);
     }
 }

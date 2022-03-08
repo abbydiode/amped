@@ -1667,6 +1667,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 538871486, guid: 9fd04d5491d4b284bafdf1c3f68e8ef5, type: 3}
+      propertyPath: RollSpeed
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777175936335242008, guid: 9fd04d5491d4b284bafdf1c3f68e8ef5, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2777175936335242009, guid: 9fd04d5491d4b284bafdf1c3f68e8ef5, type: 3}
       propertyPath: m_RootOrder
       value: 1
