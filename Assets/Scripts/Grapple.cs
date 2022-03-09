@@ -2,16 +2,19 @@ using UnityEngine;
 
 public class Grapple : MonoBehaviour
 {
-    public float ExtensionSpeed = 0.01f;
+    public float ExtensionSpeed = 0.02f;
+    public GameObject Arm, Crosshair, Hand;
 
     float x, y;
     bool IsAiming, Shoot;
-    public GameObject Arm, Crosshair;
-    SpriteRenderer ArmRenderer;
+    SpriteRenderer ArmRenderer, HandRenderer;
+    Vector2 ShotSpeed;
 
     void Start()
     {
         ArmRenderer = Arm.GetComponent<SpriteRenderer>();
+        HandRenderer = Hand.GetComponent<SpriteRenderer>();
+        ShotSpeed = new Vector2(ExtensionSpeed / 2, 0);
     }
 
     void Update()
@@ -33,10 +36,22 @@ public class Grapple : MonoBehaviour
 
 
         if (Shoot)
-            ArmRenderer.size += new Vector2(ExtensionSpeed / 2, 0);
+        {
+            ArmRenderer.size += ShotSpeed;
+            Hand.transform.localPosition += (Vector3)ShotSpeed;
+        }
         else if (ArmRenderer.size.x > 0.1)
-            ArmRenderer.size -= new Vector2(ExtensionSpeed / 2, 0);
+        {
+            ArmRenderer.size -= ShotSpeed;
+            Hand.transform.localPosition -= (Vector3)ShotSpeed;
+        }
+        else
+        {
+            ArmRenderer.size = new Vector2(0, ArmRenderer.size.y);
+            Hand.transform.localPosition = new Vector3(0, 0, 0);
+        }
 
         ArmRenderer.material.color = new Color(1, 1, 1, ArmRenderer.size.x > 0.5f ? 1 : 0);
+        HandRenderer.material.color = new Color(1, 1, 1, ArmRenderer.size.x > 0.5f ? 1 : 0);
     }
 }
