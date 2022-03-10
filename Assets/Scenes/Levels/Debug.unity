@@ -985,6 +985,11 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &816733053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 31652467152748999, guid: 84da26d26af08334a942a96a75150f11, type: 3}
+  m_PrefabInstance: {fileID: 6068476515341072271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1249501440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1950,6 +1955,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1584631051, guid: 84da26d26af08334a942a96a75150f11, type: 3}
+      propertyPath: Hand
+      value: 
+      objectReference: {fileID: 816733053}
+    - target: {fileID: 1719410031001786258, guid: 84da26d26af08334a942a96a75150f11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248949445681355298, guid: 84da26d26af08334a942a96a75150f11, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6068476515390401638, guid: 84da26d26af08334a942a96a75150f11, type: 3}
       propertyPath: m_RootOrder
       value: 1
