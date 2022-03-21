@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
-    async void FixedUpdate() {
+    void FixedUpdate() {
         Vector2 newPosition = _rigidbody.position + new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * WalkSpeed * Time.fixedDeltaTime;
 
         _spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") < 0;
