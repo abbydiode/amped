@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        Vector2 movementVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         Vector2 newPosition = _rigidbody.position + movementVector  * WalkSpeed * Time.fixedDeltaTime;
 
         _rigidbody.MovePosition(newPosition);
