@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WalkSpeed: 5
+  score: {fileID: 0}
 --- !u!212 &1087947006038639261
 SpriteRenderer:
   m_ObjectHideFlags: 0

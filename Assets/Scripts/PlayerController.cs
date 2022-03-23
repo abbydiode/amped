@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
     public float WalkSpeed = 5;
+    public Text score;
     private Rigidbody2D _rigidbody;
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
     private Vector2 movementDirection;
+    private GameObject currentScrap;
 
     void Start() {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -25,5 +28,29 @@ public class PlayerController : MonoBehaviour {
         _animator.SetFloat("Horizontal", movementDirection.x);
         _animator.SetFloat("Vertical", movementDirection.y);
         _animator.SetFloat("Velocity", movementDirection.magnitude);
+    }
+
+    void OnInteract(InputValue input) {
+        if (currentScrap != null) {
+            Destroy(currentScrap);
+            currentScrap = null;
+            score.text = (int.Parse(score.text) + 1).ToString();
+
+            if (int.Parse(score.text) == 5) {
+                score.text = "You win!";
+            }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider) {
+        if (collider.tag == "Scrap") {
+            currentScrap = collider.gameObject;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider) {
+        if (collider.tag == "Scrap" && collider.gameObject == currentScrap) {
+            currentScrap = null;
+        }
     }
 }
