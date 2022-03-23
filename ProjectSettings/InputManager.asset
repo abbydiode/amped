@@ -7,8 +7,8 @@ InputManager:
   m_Axes:
   - serializedVersion: 3
     m_Name: Horizontal
-    descriptiveName: Move Right (Keyboard)
-    descriptiveNegativeName: Move Left (Keyboard)
+    descriptiveName: Move West (Keyboard)
+    descriptiveNegativeName: Move East (Keyboard)
     negativeButton: a
     positiveButton: d
     altNegativeButton: left
@@ -23,8 +23,8 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Horizontal
-    descriptiveName: Move Right
-    descriptiveNegativeName: Move Left
+    descriptiveName: Move West
+    descriptiveNegativeName: Move East
     negativeButton: 
     positiveButton: 
     altNegativeButton: 
@@ -39,8 +39,8 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical
-    descriptiveName: 
-    descriptiveNegativeName: Crouch (Keyboard)
+    descriptiveName: Move North (Keyboard)
+    descriptiveNegativeName: Move South (Keyboard)
     negativeButton: s
     positiveButton: w
     altNegativeButton: down
@@ -55,8 +55,8 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical
-    descriptiveName: 
-    descriptiveNegativeName: Crouch
+    descriptiveName: Move North
+    descriptiveNegativeName: Move South
     negativeButton: 
     positiveButton: 
     altNegativeButton: 
@@ -70,25 +70,9 @@ InputManager:
     axis: 6
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Jump
-    descriptiveName: Jump (Keyboard)
-    descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: space
-    altNegativeButton: 
-    altPositiveButton: 
-    gravity: 1000
-    dead: 0.001
-    sensitivity: 1000
-    snap: 0
-    invert: 0
-    type: 0
-    axis: 0
-    joyNum: 0
-  - serializedVersion: 3
     m_Name: Horizontal
-    descriptiveName: Move Right
-    descriptiveNegativeName: Move Left
+    descriptiveName: Move East
+    descriptiveNegativeName: Move West
     negativeButton: 
     positiveButton: 
     altNegativeButton: 
@@ -103,8 +87,8 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Horizontal
-    descriptiveName: Move Right (Joy Con)
-    descriptiveNegativeName: Move Left
+    descriptiveName: Move East (Joy Con)
+    descriptiveNegativeName: Move West (Joy Con)
     negativeButton: 
     positiveButton: 
     altNegativeButton: 
@@ -119,8 +103,8 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical
-    descriptiveName: 
-    descriptiveNegativeName: Crouch
+    descriptiveName: Move North
+    descriptiveNegativeName: Move South
     negativeButton: 
     positiveButton: 
     altNegativeButton: 
@@ -135,8 +119,8 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical
-    descriptiveName: 
-    descriptiveNegativeName: Crouch (Joy Con)
+    descriptiveName: Move North (Joy Con)
+    descriptiveNegativeName: Move South (Joy Con)
     negativeButton: 
     positiveButton: 
     altNegativeButton: 
@@ -182,22 +166,6 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Jump
-    descriptiveName: Jump
-    descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: joystick button 0
-    altNegativeButton: 
-    altPositiveButton: joystick button 1
-    gravity: 1000
-    dead: 0.001
-    sensitivity: 1000
-    snap: 0
-    invert: 0
-    type: 0
-    axis: 0
-    joyNum: 0
-  - serializedVersion: 3
     m_Name: Submit
     descriptiveName: Menu Submit Button
     descriptiveNegativeName: 
@@ -230,50 +198,18 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: AimHorizontal
-    descriptiveName: Aim Up
-    descriptiveNegativeName: Aim Down
+    m_Name: Interact
+    descriptiveName: Interact
+    descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 
+    positiveButton: f
     altNegativeButton: 
-    altPositiveButton: 
-    gravity: 3
+    altPositiveButton: joystick button 0
+    gravity: 1000
     dead: 0.001
-    sensitivity: 3
+    sensitivity: 1000
     snap: 0
     invert: 0
-    type: 2
-    axis: 3
-    joyNum: 0
-  - serializedVersion: 3
-    m_Name: AimVertical
-    descriptiveName: Aim Right
-    descriptiveNegativeName: Aim Left
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: 
-    altPositiveButton: 
-    gravity: 3
-    dead: 0.001
-    sensitivity: 3
-    snap: 0
-    invert: 1
-    type: 2
-    axis: 4
-    joyNum: 0
-  - serializedVersion: 3
-    m_Name: ShootHook
-    descriptiveName: Extend hook
-    descriptiveNegativeName: Retract hook
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: 
-    altPositiveButton: 
-    gravity: 3
-    dead: 0.001
-    sensitivity: 3
-    snap: 0
-    invert: 1
-    type: 2
-    axis: 9
+    type: 0
+    axis: 0
     joyNum: 0
