@@ -13,13 +13,13 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        Vector2 movementVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        Vector2 newPosition = _rigidbody.position + movementVector  * WalkSpeed * Time.fixedDeltaTime;
+        Vector2 movementDirection = Vector2.ClampMagnitude(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")), 1);
+        Vector2 newPosition = _rigidbody.position + movementDirection  * WalkSpeed * Time.fixedDeltaTime;
 
         _rigidbody.MovePosition(newPosition);
 
         _animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
         _animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
-        _animator.SetFloat("Velocity", movementVector.magnitude);
+        _animator.SetFloat("Velocity", movementDirection.magnitude);
     }
 }
