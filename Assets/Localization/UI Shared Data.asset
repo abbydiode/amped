@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: UI Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: UI
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
-  m_Entries: []
+  m_TableCollectionNameGuidString: 7e39f0840d9974b458293368e37e0e39
+  m_Entries:
+  - m_Id: 803013918720
+    m_Key: YOU_WIN
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

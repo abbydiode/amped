@@ -17,8 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: e687555bd15249d4b87de3347496e9ae
   m_SerializeEntries:
-  - m_GUID: 20342fbf5c19a3144a70aa3e7316f33f
-    m_Address: Localization_nl
+  - m_GUID: abfe444e19b7cd14082385f3008cd1a0
+    m_Address: UI_nl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nl
+    - Preload
+  - m_GUID: 3efb7f2355d721541aa9121170ddeb53
+    m_Address: Dialogue_nl
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-nl

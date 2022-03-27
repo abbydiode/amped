@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.Localization;
 
 public class PlayerController : MonoBehaviour {
     public float WalkSpeed = 5;
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour {
     private Animator _animator;
     private Vector2 movementDirection;
     private GameObject currentScrap;
+    private LocalizedStringTable
 
     void Start() {
         _rigidbody = GetComponent<Rigidbody2D>();
