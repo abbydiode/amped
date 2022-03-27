@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     private Animator _animator;
     private Vector2 movementDirection;
     private GameObject currentScrap;
-    private LocalizedStringTable
+    //private LocalizedStringTable
 
     void Start() {
         _rigidbody = GetComponent<Rigidbody2D>();
