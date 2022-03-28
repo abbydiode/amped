@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.Localization.Settings;
 
 public class PlayerController : MonoBehaviour {
     public float WalkSpeed = 5;
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour {
     private Animator _animator;
     private Vector2 movementDirection;
     private GameObject currentScrap;
+    //private LocalizedStringTable
 
     void Start() {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -37,7 +39,15 @@ public class PlayerController : MonoBehaviour {
             score.text = (int.Parse(score.text) + 1).ToString();
 
             if (int.Parse(score.text) == 5) {
-                score.text = "You win!";
+                // TODO: generalize to entire project instead of in file reference
+                var op = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("UI", "YOU_WIN");
+                if (op.IsDone)
+                {
+                    Debug.Log(op.Result);
+                    score.text = op.Result;
+                }
+                else
+                    op.Completed += (op) => Debug.Log(op.Result);
             }
         }
     }
