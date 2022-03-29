@@ -6151,6 +6151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111151883}
   - component: {fileID: 2111151884}
+  - component: {fileID: 2111151885}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -6179,14 +6180,29 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111151882}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99c06dbfc1c643247a2a890a85dfb405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnArea: 10
   SpawnAmount: 5
-  ScrapPrefab: {fileID: 3239732168553359883, guid: 58e6ce3fa05d1d4448e2b575fd41e1e7, type: 3}
+  ScrapPrefab: {fileID: 3240388665297782111, guid: bbbbed4acea01df4bb2f6e2efa39095f, type: 3}
+--- !u!114 &2111151885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111151882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b35c1e87b1b2a44b8b71be423d41fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnArea: 10
+  SpawnAmount: 10
+  ScrapPrefab: {fileID: 3240388665297782111, guid: bbbbed4acea01df4bb2f6e2efa39095f, type: 3}
 --- !u!1 &2115621733
 GameObject:
   m_ObjectHideFlags: 0
